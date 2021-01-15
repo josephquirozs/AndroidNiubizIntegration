@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    tools:showIn="@layout/activity_visanet_authorization">
+
+    <TableRow
+        android:id="@+id/row_fintrax"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:animateLayoutChanges="true">
+
+        <RelativeLayout
+            android:id="@+id/fintrax_buy1"
+            android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="@dimen/visanet_3"
+            android:background="@drawable/visanet_rounded_corners_bg_ambar"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_alignEnd="@+id/sp_buy1" />
+
+            <Space
+                android:id="@+id/sp_buy1"
+                android:layout_height="15dp"
+                android:layout_width="match_parent" />
+
+            <RadioButton
+                android:id="@+id/rb_fintrax_buy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/visanet_25"
+                android:layout_marginStart="@dimen/visanet_10"
+                android:layout_below="@+id/sp_buy1"
+                android:checked="true"
+                android:clickable="false"
+                android:text="BRL 150.00"
+                android:textSize="@dimen/visanet_15"
+                android:textStyle="bold"
+                android:theme="@style/RadioButtonAmbar" />
+
+            <TextView
+                android:id="@+id/tv_fintrax1"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/visanet_12"
+                android:layout_marginStart="@dimen/visanet_15"
+                android:layout_marginEnd="@dimen/visanet_15"
+                android:layout_below="@+id/rb_fintrax_buy1"
+                android:text="BRL 150.00" />
+
+            <TextView
+                android:id="@+id/tv_fintrax2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/visanet_12"
+                android:layout_marginStart="@dimen/visanet_15"
+                android:layout_marginEnd="@dimen/visanet_15"
+                android:layout_below="@+id/tv_fintrax1"
+                android:text="PEN = BRL 0,9657" />
+
+            <TextView
+                android:id="@+id/tv_fintrax3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/visanet_12"
+                android:layout_marginStart="@dimen/visanet_15"
+                android:layout_marginEnd="@dimen/visanet_15"
+                android:layout_below="@+id/tv_fintrax2"
+                android:text="FX MARGIN = 3.50%" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fintrax_buy2"
+            android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginStart="@dimen/visanet_3"
+            android:background="@drawable/visanet_rounded_corners_input_disable_gray"
+            android:orientation="vertical">
+
+            <Space
+                android:id="@+id/sp_buy2"
+                android:layout_height="15dp"
+                android:layout_width="match_parent" />
+
+            <RadioButton
+                android:id="@+id/rb_fintrax_buy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/visanet_25"
+                android:layout_marginStart="@dimen/visanet_10"
+                android:layout_below="@+id/sp_buy2"
+                android:clickable="false"
+                android:text="PEN 250.00"
+                android:theme="@style/RadioButtonAmbar" />
+
+            <TextView
+                android:id="@+id/tv_fintrax_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/visanet_12"
+                android:layout_marginBottom="@dimen/visanet_10"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/rb_fintrax_buy2"
+                android:text="@string/fintrax_content2" />
+
+        </RelativeLayout>
+
+    </TableRow>
+</TableLayout>
+
+
+

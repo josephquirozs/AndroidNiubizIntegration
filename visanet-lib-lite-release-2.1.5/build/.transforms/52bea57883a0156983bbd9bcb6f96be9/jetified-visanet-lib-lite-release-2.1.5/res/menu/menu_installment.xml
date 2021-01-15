@@ -1,0 +1,146 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_one_installment"
+        android:title="@string/visa_menu_one_installment" />
+
+    <item
+        android:id="@+id/option_two_installment"
+        android:title="@string/visa_menu_two_installment" />
+
+    <item
+        android:id="@+id/option_three_installment"
+        android:title="@string/visa_menu_three_installment" />
+
+    <item
+        android:id="@+id/option_four_installment"
+        android:title="@string/visa_menu_four_installment" />
+
+    <item
+        android:id="@+id/option_five_installment"
+        android:title="@string/visa_menu_five_installment" />
+
+    <item
+        android:id="@+id/option_six_installment"
+        android:title="@string/visa_menu_six_installment" />
+
+    <item
+        android:id="@+id/option_seven_installment"
+        android:title="@string/visa_menu_seven_installment" />
+
+    <item
+        android:id="@+id/option_eight_installment"
+        android:title="@string/visa_menu_eight_installment" />
+
+    <item
+        android:id="@+id/option_nine_installment"
+        android:title="@string/visa_menu_nine_installment" />
+
+    <item
+        android:id="@+id/option_ten_installment"
+        android:title="@string/visa_menu_ten_installment" />
+
+    <item
+        android:id="@+id/option_eleven_installment"
+        android:title="@string/visa_menu_eleven_installment" />
+
+    <item
+        android:id="@+id/option_twelve_installment"
+        android:title="@string/visa_menu_twelve_installment" />
+
+    <item
+        android:id="@+id/option_thirteen_installment"
+        android:title="@string/visa_menu_thirteen_installment" />
+
+    <item
+        android:id="@+id/option_fourteen_installment"
+        android:title="@string/visa_menu_fourteen_installment" />
+
+    <item
+        android:id="@+id/option_fiveteen_installment"
+        android:title="@string/visa_menu_fiveteen_installment" />
+
+    <item
+        android:id="@+id/option_sixteen_installment"
+        android:title="@string/visa_menu_sixteen_installment" />
+
+    <item
+        android:id="@+id/option_seventeen_installment"
+        android:title="@string/visa_menu_seventeen_installment" />
+
+    <item
+        android:id="@+id/option_eighteen_installment"
+        android:title="@string/visa_menu_eighteen_installment" />
+
+    <item
+        android:id="@+id/option_nineteen_installment"
+        android:title="@string/visa_menu_nineteen_installment" />
+
+    <item
+        android:id="@+id/option_twenty_installment"
+        android:title="@string/visa_menu_twenty_installment" />
+
+    <item
+        android:id="@+id/option_twentyone_installment"
+        android:title="@string/visa_menu_twentyone_installment" />
+
+    <item
+        android:id="@+id/option_twentytwo_installment"
+        android:title="@string/visa_menu_twentytwo_installment" />
+
+    <item
+        android:id="@+id/option_twentythree_installment"
+        android:title="@string/visa_menu_twentythree_installment" />
+
+    <item
+        android:id="@+id/option_twentyfour_installment"
+        android:title="@string/visa_menu_twentyfour_installment" />
+
+    <item
+        android:id="@+id/option_twentyfive_installment"
+        android:title="@string/visa_menu_twentyfive_installment" />
+
+    <item
+        android:id="@+id/option_twentysix_installment"
+        android:title="@string/visa_menu_twentysix_installment" />
+
+    <item
+        android:id="@+id/option_twentyseven_installment"
+        android:title="@string/visa_menu_twentyseven_installment" />
+
+    <item
+        android:id="@+id/option_twentyeight_installment"
+        android:title="@string/visa_menu_twentyeight_installment" />
+
+    <item
+        android:id="@+id/option_twentynine_installment"
+        android:title="@string/visa_menu_twentynine_installment" />
+
+    <item
+        android:id="@+id/option_thirty_installment"
+        android:title="@string/visa_menu_thirty_installment" />
+
+    <item
+        android:id="@+id/option_thirtyone_installment"
+        android:title="@string/visa_menu_thirtyone_installment" />
+
+    <item
+        android:id="@+id/option_thirtytwo_installment"
+        android:title="@string/visa_menu_thirtytwo_installment" />
+
+    <item
+        android:id="@+id/option_thirtythree_installment"
+        android:title="@string/visa_menu_thirythree_installment" />
+
+    <item
+        android:id="@+id/option_thirtyfour_installment"
+        android:title="@string/visa_menu_thirtyfour_installment" />
+
+    <item
+        android:id="@+id/option_thirtyfive_installment"
+        android:title="@string/visa_menu_thirtyfive_installment" />
+
+    <item
+        android:id="@+id/option_thirtysix_installment"
+        android:title="@string/visa_menu_thirtysix_installment" />
+
+</menu>

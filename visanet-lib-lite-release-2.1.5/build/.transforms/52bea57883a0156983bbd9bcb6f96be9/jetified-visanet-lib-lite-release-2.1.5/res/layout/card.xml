@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/visanet_50"
+        android:layout_marginBottom="@dimen/visanet_10"
+        android:gravity="center_vertical"
+        android:background="@drawable/visanet_rounded_corners_bg_gray_medium"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/card_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="false"
+            android:paddingRight="@dimen/visanet_10" />
+
+        <ImageView
+            android:id="@+id/card_visa"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:src="@drawable/visadefault" />
+
+        <TextView
+            android:id="@+id/card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="************1234"
+            android:paddingEnd="@dimen/visanet_100"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/card_trash"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/trash" />
+    </LinearLayout>
+
+    <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+        android:id="@+id/card_cvv"
+        android:visibility="gone"
+        style="@style/VisaNetInput"
+        android:layout_width="170dp"
+        android:layout_height="@dimen/visanet_50"
+        android:gravity="center_vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/visanet_5"
+        android:layout_marginBottom="@dimen/visanet_5"
+        android:digits="0123456789"
+        android:drawableEnd="@drawable/visanet_ic_info"
+        android:drawableStart="@drawable/visanet_ic_cvv"
+        android:hint="@string/visanet_hint_cvv"
+        android:inputType="phone"
+        android:maxLength="3" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/visanet_white"
+    tools:context="lib.visanet.com.pe.visanetlib.presentation.ui.VisaNetAuthorizationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:elevation="0dp">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/visanet_purple1"
+                        android:paddingLeft="@dimen/visanet_10"
+                        android:paddingRight="@dimen/visanet_10"
+                        app:navigationIcon="@drawable/ic_icon_arrow_left_white"
+                        app:theme="@style/ToolBarStyle" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <LinearLayout
+                    android:id="@+id/logo_text_full"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/visanet_purple1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/visanet_24"
+                    android:paddingTop="@dimen/visanet_22"
+                    android:paddingRight="@dimen/visanet_24"
+                    android:paddingBottom="@dimen/visanet_24">
+
+                    <TextView
+                        android:id="@+id/logo_yape_full_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yape_title1"
+                        android:textColor="@color/visanet_white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/logo_yape_full_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:paddingBottom="@dimen/visanet_5"
+                        android:singleLine="false"
+                        android:text="@string/yape_title2"
+                        android:textColor="@color/visanet_white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/logo_yape_full_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="7sp"
+                        android:maxLines="5"
+                        android:singleLine="false"
+                        android:text="@string/yape_title3"
+                        android:textColor="@color/visanet_purple2"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/visanet_24"
+                    android:layout_marginRight="@dimen/visanet_24"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/visanet_24"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:id="@+id/row_logo"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/logo_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@drawable/visanet_rounded_corners_bg_logo_yape"
+                            android:orientation="vertical"
+                            android:padding="@dimen/visanet_24"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/logo_yape_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/yape_title1"
+                                android:textColor="@color/visanet_white"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/logo_yape_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="3"
+                                android:singleLine="false"
+                                android:text="@string/yape_title2"
+                                android:textColor="@color/visanet_white"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/logo_yape_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="10sp"
+                                android:maxLines="5"
+                                android:paddingRight="@dimen/visanet_24"
+                                android:singleLine="false"
+                                android:text="@string/yape_title3"
+                                android:textColor="@color/visanet_purple2" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/logo"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_100"
+                            android:layout_weight="2"
+                            android:contentDescription="@string/image_description"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/visanet_logo_merchant"
+                            android:visibility="gone" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_label_card"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/label_card"
+                            style="@style/YapeLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="16dp"
+                            android:layout_weight="2"
+                            android:text="Número de tarjeta (Ahorros)"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_card"
+                        android:layout_marginBottom="@dimen/visanet_3">
+
+                        <EditText
+                            android:id="@+id/card"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/text_box_underline_selector"
+                            android:digits="0123456789 -_"
+                            android:hint="@string/visanet_hint_yape_card"
+                            android:inputType="phone"
+                            android:maxLength="19"
+                            android:nextFocusForward="@+id/cvv"
+                            android:theme="@style/EditTextYape" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_label_date_cvv"
+                        android:layout_marginTop="@dimen/visanet_10"
+                        android:baselineAligned="false">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/label_date"
+                                style="@style/YapeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:text="Fecha de vencimiento"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:id="@+id/label_cvv"
+                                style="@style/YapeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingRight="@dimen/visanet_50"
+                                android:text="@string/visanet_hint_cvv"
+                                android:textSize="12sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_date_cvv"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:layout_marginBottom="@dimen/visanet_12">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/date_mm"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/toolbarTransparent"
+                                android:drawableRight="@drawable/ic_icon_triangle"
+                                android:text="@string/visanet_hint_mm"
+                                android:paddingTop="12dp" />
+
+                            <TextView
+                                android:id="@+id/date_yy"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="88dp"
+                                android:backgroundTint="@color/toolbarTransparent"
+                                android:drawableRight="@drawable/ic_icon_triangle"
+                                android:text="@string/visanet_hint_aa"
+                                android:paddingTop="12dp" />
+
+                            <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+                                android:id="@+id/date"
+                                style="@style/VisaNetInput"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/visanet_50"
+                                android:layout_marginRight="@dimen/visanet_3"
+                                android:digits="0123456789/"
+                                android:drawableLeft="@drawable/visanet_ic_date"
+                                android:hint="@string/visanet_hint_date"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                android:maxLength="5"
+                                android:visibility="gone" />
+
+
+                            <EditText
+                                android:id="@+id/cvv"
+                                android:layout_width="72dp"
+                                android:layout_height="42dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/text_box_underline_selector"
+                                android:digits="0123456789"
+                                android:hint="@string/visanet_hint_cvv2"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                android:maxLength="3"
+                                android:nextFocusForward="@+id/name"
+                                android:theme="@style/EditTextYape" />
+
+                        </RelativeLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_label_name_lastname"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/label_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/visanet_hint_name" />
+
+                        <TextView
+                            android:id="@+id/label_last_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/visanet_hint_last_name" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_name_lastname"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:layout_marginBottom="@dimen/visanet_3"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+                            android:id="@+id/name"
+                            style="@style/VisaNetInput"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_50"
+                            android:layout_marginRight="@dimen/visanet_3"
+                            android:layout_weight="2"
+                            android:drawableLeft="@drawable/visanet_ic_user"
+                            android:hint="@string/visanet_hint_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="25" />
+
+                        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+                            android:id="@+id/last_name"
+                            style="@style/VisaNetInput"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_50"
+                            android:layout_marginLeft="@dimen/visanet_3"
+                            android:layout_weight="2"
+                            android:drawableLeft="@drawable/visanet_ic_user"
+                            android:hint="@string/visanet_hint_last_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="25" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_label_document"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/label_document_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/visanet_hint_document_type" />
+
+                        <TextView
+                            android:id="@+id/label_document_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/visanet_hint_document_number" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_document"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:layout_marginBottom="@dimen/visanet_3"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+                            android:id="@+id/documentType"
+                            style="@style/VisaNetInput"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_50"
+                            android:layout_marginRight="@dimen/visanet_3"
+                            android:layout_weight="2"
+                            android:drawableLeft="@drawable/visanet_ic_user"
+                            android:focusable="false"
+                            android:hint="@string/visanet_hint_document_type"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="25" />
+
+                        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+                            android:id="@+id/documentNumber"
+                            style="@style/VisaNetInput"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_50"
+                            android:layout_marginLeft="@dimen/visanet_3"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/visanet_hint_document_number"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="25" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_label_phone"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/label_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="@string/visanet_hint_phone" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_phone"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:layout_marginBottom="@dimen/visanet_3"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+                            android:id="@+id/phone"
+                            style="@style/VisaNetInput"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_50"
+                            android:layout_weight="4"
+                            android:drawableLeft="@drawable/visanet_ic_phone"
+                            android:hint="@string/visanet_hint_phone"
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="30" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_label_email"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/label_email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="@string/visanet_hint_email" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_email"
+                        android:layout_marginTop="@dimen/visanet_3"
+                        android:layout_marginBottom="@dimen/visanet_3"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+                            android:id="@+id/email"
+                            style="@style/VisaNetInput"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_50"
+                            android:layout_weight="4"
+                            android:drawableLeft="@drawable/visanet_ic_mail"
+                            android:hint="@string/visanet_hint_email"
+                            android:imeOptions="actionDone"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="30" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="@dimen/visanet_5"
+                        android:layout_marginBottom="@dimen/visanet_14"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/register"
+                            style="@style/VisaNetBigButton"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_56"
+                            android:layout_weight="4"
+                            android:background="@drawable/visanet_selector_button_green"
+                            android:enabled="false"
+                            android:text="@string/visanet_yape_register"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="@dimen/visanet_30"
+                        android:layout_marginBottom="@dimen/visanet_30">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_50"
+                            android:layout_gravity="left"
+                            android:layout_weight="2"
+                            android:contentDescription="@string/image_description"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/visanet_logo_pci"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/visanet_30"
+                            android:layout_weight="2"
+                            android:padding="@dimen/visanet_4"
+                            android:contentDescription="@string/image_description"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/visanet_logo_visa" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/view_visanet_loading" />-->
+
+</FrameLayout>

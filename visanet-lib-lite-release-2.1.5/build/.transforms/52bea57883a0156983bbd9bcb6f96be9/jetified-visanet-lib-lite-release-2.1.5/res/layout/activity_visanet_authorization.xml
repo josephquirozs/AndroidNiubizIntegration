@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/visanet_gray"
+    tools:context="lib.visanet.com.pe.visanetlib.presentation.ui.VisaNetAuthorizationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/logo_text_full"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/visanet_purple1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/visanet_24"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/logo_text_full_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/visanet_48"
+                    android:paddingLeft="@dimen/visanet_24"
+                    android:paddingRight="@dimen/visanet_24"
+                    android:paddingTop="@dimen/visanet_24"
+                    android:text="@string/yape_title1"
+                    android:textColor="@color/visanet_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/logo_text_full_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/visanet_32"
+                    android:maxLines="3"
+                    android:paddingLeft="@dimen/visanet_24"
+                    android:paddingRight="@dimen/visanet_24"
+                    android:singleLine="false"
+                    android:text="@string/yape_title2"
+                    android:textColor="@color/visanet_white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextViewEdits" />
+
+                <TextView
+                    android:id="@+id/logo_text_full_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/visanet_48"
+                    android:lineSpacingExtra="10sp"
+                    android:maxLines="5"
+                    android:paddingLeft="@dimen/visanet_24"
+                    android:paddingRight="@dimen/visanet_24"
+                    android:paddingTop="@dimen/visanet_3"
+                    android:singleLine="false"
+                    android:text="@string/yape_title3"
+                    android:textColor="@color/visanet_purple2"
+                    android:textSize="14sp"
+                    tools:ignore="TextViewEdits" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/visanet_24"
+                android:layout_marginRight="@dimen/visanet_24"
+                android:layout_marginTop="@dimen/visanet_20"
+                android:gravity="center"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/visanet_3"
+                    android:layout_marginTop="@dimen/visanet_3"
+                    android:paddingBottom="@dimen/visanet_20">
+
+                    <TextView
+                        android:id="@+id/txt_eng"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/eng" />
+
+                    <TextView
+                        android:id="@+id/txt_esp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/esp" />
+
+                    <Space android:layout_weight="2.2" />
+
+                    <TextView
+                        android:id="@+id/txt_close"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.8"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:text="@string/cancel" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_logo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/visanet_3"
+                    android:layout_marginTop="@dimen/visanet_3"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/logo_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/titulo_temp"
+                        android:textColor="@color/visanet_black"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:contentDescription="@string/logo"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/tulogo"
+                        android:visibility="visible" />
+                </TableRow>
+
+                <include layout="@layout/payment_method" />
+
+                <include layout="@layout/fintrax" />
+
+                <include layout="@layout/form_payment_basic" />
+
+                <include layout="@layout/form_payment_pagoefectivo" />
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/view_visanet_loading" />
+
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#173DA3</color>
+    <color name="colorAccent">#eadfcc</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPrimary">#121415</color>
+    <color name="colorPrimaryDark">#3c5866</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="edit_text_border_selected">#0051dc</color>
+    <color name="edit_text_border_unselected">#616188</color>
+    <color name="edit_text_default_color">#222222</color>
+    <color name="grey">#545454</color>
+    <color name="lightGrey">#D3D3D3</color>
+    <dimen name="activity_horizontal_margin">1dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="edit_text_border_padding">2dp</dimen>
+    <dimen name="edit_text_border_radius">2dp</dimen>
+    <dimen name="edit_text_border_width">1dp</dimen>
+    <dimen name="fab_margin">8dp</dimen>
+    <dimen name="marginBottom">5dp</dimen>
+    <dimen name="marginTop">10dp</dimen>
+    <dimen name="warningInddims">40dp</dimen>
+    <string name="app_name">SECURE CHECKOUT</string>
+    <string name="cancel">Cancel</string>
+    <string name="card_network">Card Network</string>
+    <string name="challInfoText">Verification code</string>
+    <string name="code">Code</string>
+    <string name="continueText">CONTINUE</string>
+    <string name="issuer_image">Issuer Image</string>
+    <string name="learn_more_about_auth">Learn more about auth</string>
+    <string name="need_some_help">Need some help?</string>
+    <string name="next">NEXT</string>
+    <string name="payment_security">Payment Security</string>
+    <string name="processing">Processing</string>
+    <string name="ps_image">PS Image</string>
+    <string name="resend_code">RESEND CODE</string>
+    <string name="secured_checkout">SECURE CHECKOUT</string>
+    <string name="singe_select_challenge_info"><![CDATA[Hello, your online payment is being secured using <CardNetwork>.\nPlease enter a secure code sent from YourBank.]]></string>
+    <string name="ss_challengeinfo_lable">Where can we send it?</string>
+    <string name="textview">Great! We have sent you a text message with a secure code to your registered phone</string>
+    <string name="toolbar_title">SECURE CHECKOUT</string>
+    <string name="verify">VERIFY</string>
+    <string name="verify_by_phone">Verify by Phone</string>
+    <style name="CardinalSDKTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CardinalSDKTheme.ActionBar">
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="ChallengeToolbar.LabelText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#414141</item>
+    </style>
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:textStyle">normal</item>
+        <!--<item name="android:textSize">@dimen/event_title_text_size</item>-->
+    </style>
+    <style name="ToolBarStyle" parent="ToolBarStyle.Base"/>
+    <style name="ToolBarStyle.Base" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+    <style name="ToolBarStyle.Event" parent="ToolBarStyle">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+    </style>
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="challengelabletext" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#414141</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="otpBodyText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#414141</item>
+        <item name="android:typeface">normal</item>
+    </style>
+    <style name="otpbody.resendBtn" parent="Widget.AppCompat.Button.Colored">
+        <!--<item name="colorButtonNormal">#cbcbcb</item>-->
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="otpbody.verfyBtn" parent="Widget.AppCompat.Button.Colored">
+        <!--<item name="colorButtonNormal">#3c5866</item>-->
+        <item name="colorButtonNormal">@color/blue</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+</resources>

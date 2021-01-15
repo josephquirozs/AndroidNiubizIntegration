@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2017 CardinalCommerce. All rights reserved.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1.0"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/black"
+    >
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="180dp"
+        android:indeterminate="true"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@android:color/white"
+        tools:ignore="UselessParent">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
+            tools:ignore="RtlHardcoded" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/processing_textView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="@dimen/fab_margin"-->
+            <!--android:layout_marginStart="@dimen/fab_margin"-->
+            <!--android:layout_marginTop="@dimen/fab_margin"-->
+            <!--android:text="@string/processing"-->
+            <!--android:textAlignment="center" />-->
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:contentDescription="@string/card_network"
+            android:cropToPadding="false"
+            android:src="@drawable/card_network" />
+    </LinearLayout>
+
+</FrameLayout>

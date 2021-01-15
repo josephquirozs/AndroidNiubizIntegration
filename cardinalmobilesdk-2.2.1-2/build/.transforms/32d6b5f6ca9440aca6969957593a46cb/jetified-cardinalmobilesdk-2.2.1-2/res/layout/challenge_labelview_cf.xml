@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2017 CardinalCommerce. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum ="9">
+
+    <LinearLayout
+        android:layout_gravity="start|center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_weight="4">
+        <ImageView
+            android:id="@+id/issuerImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:contentDescription="@string/issuer_image" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_weight="1"
+        android:layout_height="30dp">
+    </View>
+
+    <LinearLayout
+        android:gravity="end|center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_weight="4">
+        <ImageView
+            android:id="@+id/psImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:contentDescription="@string/ps_image" />
+    </LinearLayout>
+</LinearLayout>

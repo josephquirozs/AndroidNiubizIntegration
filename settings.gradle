@@ -1,0 +1,6 @@
+include ':cardinalmobilesdk-2.2.1-2'
+include ':TMXProfilingConnections-6.0-138'
+include ':TMXProfiling-6.0-138'
+include ':visanet-lib-lite-release-2.1.5'
+include ':app'
+rootProject.name = "AndroidNiubizIntegration"

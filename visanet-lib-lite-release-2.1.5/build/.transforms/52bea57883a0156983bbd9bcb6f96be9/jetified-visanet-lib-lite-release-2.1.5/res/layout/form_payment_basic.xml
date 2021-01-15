@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_form_payment_basic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:visibility="gone"
+    tools:showIn="@layout/activity_visanet_authorization">
+
+    <TableRow
+        android:id="@+id/row_label_card"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/visanet_hint_card" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_card"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:animateLayoutChanges="true"
+        android:gravity="center">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/card"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_weight="2"
+            android:digits="0123456789 -_"
+            android:drawableStart="@drawable/visanet_ic_card"
+            android:hint="@string/visanet_hint_card"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="19"
+            android:nextFocusForward="@+id/date" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_label_date_cvv"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/visanet_hint_date" />
+
+        <TextView
+            android:id="@+id/label_cvv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/visanet_hint_cvv" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_date_cvv"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/date_mm"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_marginEnd="@dimen/visanet_3"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:digits="0123456789"
+            android:drawableStart="@drawable/visanet_ic_date"
+            android:focusable="false"
+            android:hint="@string/visanet_hint_mm"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="5"
+            android:visibility="gone" />
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/date_yy"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_marginEnd="@dimen/visanet_3"
+            android:layout_weight="1"
+            android:digits="0123456789"
+            android:drawableStart="@drawable/visanet_ic_date"
+            android:focusable="false"
+            android:hint="@string/visanet_hint_yy"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="5"
+            android:visibility="gone" />
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/date"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_weight="2"
+            android:digits="0123456789/"
+            android:drawableStart="@drawable/visanet_ic_date"
+            android:hint="@string/visanet_hint_mmyy"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="5"
+            android:visibility="visible" />
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/cvv"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_marginStart="@dimen/visanet_6"
+            android:layout_weight="2"
+            android:digits="0123456789"
+            android:drawableEnd="@drawable/visanet_ic_info"
+            android:drawableStart="@drawable/visanet_ic_cvv"
+            android:hint="@string/visanet_hint_cvv"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="3"
+            android:nextFocusForward="@+id/name" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_label_name_lastname"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/visanet_hint_name" />
+
+        <TextView
+            android:id="@+id/label_last_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/visanet_hint_last_name" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_name_lastname"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/name"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_marginEnd="@dimen/visanet_3"
+            android:layout_weight="2"
+            android:drawableStart="@drawable/visanet_ic_user"
+            android:hint="@string/visanet_hint_name"
+            android:imeOptions="actionNext"
+            android:inputType="textNoSuggestions"
+            android:maxLength="25" />
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/last_name"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_marginStart="@dimen/visanet_3"
+            android:layout_weight="2"
+            android:drawableStart="@drawable/visanet_ic_user"
+            android:hint="@string/visanet_hint_last_name"
+            android:imeOptions="actionNext"
+            android:inputType="textNoSuggestions"
+            android:maxLength="25" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_label_email"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/visanet_hint_email" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_email"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/email"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_weight="2"
+            android:drawableStart="@drawable/visanet_ic_mail"
+            android:hint="@string/visanet_hint_email"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:maxLength="75" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_label_phone"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/visanet_hint_phone" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_phone"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/phone"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="4"
+            android:longClickable="false"
+            android:drawableStart="@drawable/visanet_ic_phone"
+            android:hint="@string/visanet_hint_phone"
+            android:digits="0123456789"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="12" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_fixed"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+                android:id="@+id/frequency"
+                style="@style/VisaNetInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/visanet_50"
+                android:layout_marginBottom="@dimen/visanet_3"
+                android:longClickable="false"
+                android:background="@drawable/visanet_rounded_corners_input_disable_gray"
+                android:drawableStart="@drawable/clock"
+                android:focusable="false"
+                android:hint="@string/mensual"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/visanet_black" />
+
+            <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+                android:id="@+id/recurrence_amount"
+                style="@style/VisaNetInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/visanet_50"
+                android:layout_marginTop="@dimen/visanet_3"
+                android:longClickable="false"
+                android:background="@drawable/visanet_rounded_corners_input_disable_gray"
+                android:drawableStart="@drawable/money"
+                android:drawableEnd="@drawable/visanet_ic_info"
+                android:focusable="false"
+                android:hint="@string/soles"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/visanet_black"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_fixed_initial_1"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/label_pay_now"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_marginEnd="@dimen/visanet_3"
+            android:layout_weight="2"
+            android:background="@drawable/visanet_rounded_corners_input_disable_gray"
+            android:focusable="false"
+            android:hint="@string/visanet_hint_pay_now"
+            android:imeOptions="actionNext"
+            android:inputType="textNoSuggestions"
+            android:textColorHint="@color/visanet_black" />
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/fixed_initial_amount"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_marginStart="@dimen/visanet_3"
+            android:layout_weight="2"
+            android:background="@drawable/visanet_rounded_corners_input_disable_gray"
+            android:drawableEnd="@drawable/visanet_ic_info"
+            android:focusable="false"
+            android:hint="@string/soles"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/visanet_black" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_fixed_initial_2"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/frequency_charge"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_marginEnd="@dimen/visanet_3"
+            android:layout_weight="2"
+            android:background="@drawable/visanet_rounded_corners_input_disable_gray"
+            android:focusable="false"
+            android:hint="@string/visanet_hint_monthly_charge"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/visanet_black" />
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/fixed_initial_recurrence_amount"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_marginStart="@dimen/visanet_3"
+            android:layout_weight="2"
+            android:background="@drawable/visanet_rounded_corners_input_disable_gray"
+            android:digits="1234567890."
+            android:drawableEnd="@drawable/visanet_ic_info"
+            android:focusable="false"
+            android:hint="@string/soles"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/visanet_black" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_pay_limit"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/amount_limit"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:longClickable="false"
+            android:layout_weight="4"
+            android:digits="1234567890."
+            android:drawableEnd="@drawable/visanet_ic_info"
+            android:drawableStart="@drawable/ic_check_box_outline_grey_24dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/visanet_hint_amount_limit"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="30"
+            android:visibility="visible" />
+
+    </TableRow>
+
+
+    <include layout="@layout/tokenization" />
+
+
+    <TableRow
+        android:id="@+id/row_label_installments"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label_installments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/visanet_hint_installments" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_installments"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/installment"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="2"
+            android:longClickable="false"
+            android:drawableEnd="@drawable/ic_up_and_down_arrows"
+            android:drawableStart="@drawable/ic_pie_chart_24dp"
+            android:focusable="false"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            android:text="@string/visa_menu_one_installment" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_label_country"
+        android:layout_marginTop="@dimen/visanet_10"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/visanet_label_country" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_country"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/city"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_marginEnd="@dimen/visanet_3"
+            android:layout_weight="4"
+            android:longClickable="false"
+            android:digits="@string/valid_text"
+            android:drawableStart="@drawable/ic_place_black_24dp"
+            android:hint="@string/visanet_hint_city"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="30" />
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetAutoCompleteInputField
+            android:id="@+id/country"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_marginStart="@dimen/visanet_3"
+            android:layout_weight="4"
+            android:longClickable="false"
+            android:digits="@string/valid_text"
+            android:drawableStart="@drawable/ic_place_black_24dp"
+            android:hint="@string/visanet_hint_country"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_remember"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/remember"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="4"
+            android:longClickable="false"
+            android:digits="@string/valid_text_numeric"
+            android:drawableEnd="@drawable/visanet_ic_info"
+            android:drawableStart="@drawable/ic_check_box_outline_grey_24dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/visanet_hint_remember"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="30"
+            android:visibility="visible" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_label_pay"
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_label_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/suscribe_to" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_10"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/pay"
+            style="@style/VisaNetBigButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/visanet_text_pay"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <include layout="@layout/foot"/>
+
+</TableLayout>
+
+
+

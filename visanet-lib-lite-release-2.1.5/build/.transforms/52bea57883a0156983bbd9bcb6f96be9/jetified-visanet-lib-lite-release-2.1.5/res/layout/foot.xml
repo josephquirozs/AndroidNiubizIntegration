@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:id="@+id/row_multimarca_on"
+        android:weightSum="14"
+        android:layout_marginBottom="@dimen/visanet_20"
+        android:layout_marginTop="@dimen/visanet_3">
+
+        <ImageView
+            android:id="@+id/iv_logo_pci"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="6"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitStart"
+            android:src="@drawable/visanet_logo_pci" />
+
+        <ImageView
+            android:id="@+id/iv_brand_visa"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="2"
+            android:contentDescription="@string/logo"
+            android:padding="@dimen/visanet_5"
+            android:src="@drawable/logo2_visa" />
+
+        <ImageView
+            android:id="@+id/iv_brand_mastercard"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="2"
+            android:contentDescription="@string/logo"
+            android:padding="@dimen/visanet_5"
+            android:src="@drawable/logo2_mastercard" />
+
+        <ImageView
+            android:id="@+id/iv_brand_dinersclub"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="2"
+            android:contentDescription="@string/logo"
+            android:padding="@dimen/visanet_5"
+            android:src="@drawable/logo2_dinners" />
+
+        <ImageView
+            android:id="@+id/iv_brand_amex"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="2"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo2_amex" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_multimarca_off"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/visanet_20"
+        android:layout_marginTop="@dimen/visanet_3">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="1"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitStart"
+            android:src="@drawable/visanet_logo_pci" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="1"
+            android:padding="@dimen/visanet_5"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitEnd"
+            android:src="@drawable/logo2_visa" />
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/visanet_20"
+        android:layout_marginTop="@dimen/visanet_3">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="v2.1.5"
+            android:textSize="12sp" />
+
+    </TableRow>
+
+</TableLayout>
+
+
+

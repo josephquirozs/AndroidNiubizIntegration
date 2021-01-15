@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_country">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Germany</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>AntiguaandBarbuda</item>
+        <item>SaudiArabia</item>
+        <item>Algeria</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Bahrain</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Belarus</item>
+        <item>Burma</item>
+        <item>Bolivia</item>
+        <item>BosniaandHerzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>BurkinaFaso</item>
+        <item>Burundi</item>
+        <item>Bhutan</item>
+        <item>CapeVerde</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Qatar</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Cyprus</item>
+        <item>VaticanCity</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>NorthKorea</item>
+        <item>SouthKorea</item>
+        <item>IvoryCoast</item>
+        <item>CostaRica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Denmark</item>
+        <item>Dominica</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>ElSalvador</item>
+        <item>UnitedArabEmirates</item>
+        <item>Eritrea</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Spain</item>
+        <item>UnitedStates</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Philippines</item>
+        <item>Finland</item>
+        <item>Fiji</item>
+        <item>France</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Ghana</item>
+        <item>Granada</item>
+        <item>Greece</item>
+        <item>Guatemala</item>
+        <item>Guyana</item>
+        <item>Guinea</item>
+        <item>EquatorialGuinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hungary</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iraq</item>
+        <item>Iran</item>
+        <item>Ireland</item>
+        <item>Iceland</item>
+        <item>MarshallIslands</item>
+        <item>SolomonIslands</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kyrgyzstan</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Laos</item>
+        <item>Lesotho</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Madagascar</item>
+        <item>Malaysia</item>
+        <item>Malawi</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Morocco</item>
+        <item>Mauritius</item>
+        <item>Mauritania</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Mozambique</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Norway</item>
+        <item>NewZealand</item>
+        <item>Oman</item>
+        <item>Netherlands</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>PapuaNewGuinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>UnitedKingdom</item>
+        <item>CentralAfricanRepublic</item>
+        <item>CzechRepublic</item>
+        <item>RepublicofMacedonia</item>
+        <item>RepublicoftheCongo</item>
+        <item>DemocraticRepublicoftheCongo</item>
+        <item>DominicanRepublic</item>
+        <item>SouthAfricanRepublic</item>
+        <item>Rwanda</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Samoa</item>
+        <item>SaintKittsandNevis</item>
+        <item>SanMarino</item>
+        <item>SaintVincentandtheGrenadines</item>
+        <item>SaintLucia</item>
+        <item>SaoTomeandPrincipe</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>SierraLeone</item>
+        <item>Singapore</item>
+        <item>Syria</item>
+        <item>Somalia</item>
+        <item>SriLanka</item>
+        <item>Swaziland</item>
+        <item>Sudan</item>
+        <item>SouthSudan</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Suriname</item>
+        <item>Thailand</item>
+        <item>Tanzania</item>
+        <item>Tajikistan</item>
+        <item>EastTimor</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>TrinidadandTobago</item>
+        <item>Tunisia</item>
+        <item>Turkmenistan</item>
+        <item>Turkey</item>
+        <item>Tuvalu</item>
+        <item>Ukraine</item>
+        <item>Uganda</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Yemen</item>
+        <item>Djibouti</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string-array name="array_installment">
+        <item>Without Installments</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="cancel">Cancel</string>
+    <string name="card_invalidate">Number not valid</string>
+    <string name="fintrax_content2">Exchange rate according to the bank.</string>
+    <string name="form_pagoefectivo_text1">How to make purchases with PagoEfectivo?</string>
+    <string name="form_pagoefectivo_text2">After clicking on pay, you will receive an e-mail with PagoEfectivo CIP code that will be valid only for {hours} hours.</string>
+    <string name="form_pagoefectivo_text3">&lt;b>Cash deposits via PagoEfectivo&lt;/b> - Pay at BBVA, BCP, Interbank, Scotiabank, BanBif, Western Union, Tambo+, Kasnet, Full Carga, Red Digital, Money Gram, Caja Arequipa, Disashop, at any agent or authorized agency nation wide to PagoEfectivo account.</string>
+    <string name="form_pagoefectivo_text4">&lt;b>Bank transfers via PagoEfectivo&lt;/b> - Pay at BBVA, BCP, Interbank, Scotiabank, BanBif, Caja Arequipa, through internet banking or Mobile banking in the payment of services option.</string>
+    <string name="fx_margen">FX MARGIN</string>
+    <string name="label_alias">Enter Alias</string>
+    <string name="label_hint_alias">Enter Alias here..</string>
+    <string name="label_pe_email">Enter your email to receive the code:</string>
+    <string name="msg_recurrence_amount">This amount will be charged to your card periodically</string>
+    <string name="pe_tarjeta_cd">Credit and debit card</string>
+    <string name="pe_transferencia">Bank Transfers and Cash deposits</string>
+    <string name="remember_description">Your information will be saved for future purchases</string>
+    <string name="suscribe_to">Subscribe to:</string>
+    <string name="title_recurrence_amount">Fixed Amount</string>
+    <string name="title_remember_description">Remember card</string>
+    <string name="visa_cvv_info">The CVV code are the three digits that appear on the back of the card</string>
+    <string name="visa_hint_no_installment">Without installments</string>
+    <string name="visa_menu_eight_installment">8 installments</string>
+    <string name="visa_menu_eighteen_installment">18 installments</string>
+    <string name="visa_menu_eleven_installment">11 installments</string>
+    <string name="visa_menu_five_installment">5 installments</string>
+    <string name="visa_menu_fiveteen_installment">15 installments</string>
+    <string name="visa_menu_four_installment">4 installments</string>
+    <string name="visa_menu_fourteen_installment">14 installments</string>
+    <string name="visa_menu_installment">Installments</string>
+    <string name="visa_menu_nine_installment">9 installments</string>
+    <string name="visa_menu_nineteen_installment">19 installments</string>
+    <string name="visa_menu_one_installment">No Installments</string>
+    <string name="visa_menu_seven_installment">7 installments</string>
+    <string name="visa_menu_seventeen_installment">17 installments</string>
+    <string name="visa_menu_six_installment">6 installments</string>
+    <string name="visa_menu_sixteen_installment">16 installments</string>
+    <string name="visa_menu_ten_installment">10 installments</string>
+    <string name="visa_menu_thirteen_installment">13 installments</string>
+    <string name="visa_menu_thirty_installment">30 installments</string>
+    <string name="visa_menu_thirtyfive_installment">35 installments</string>
+    <string name="visa_menu_thirtyfour_installment">34 installments</string>
+    <string name="visa_menu_thirtyone_installment">31 installments</string>
+    <string name="visa_menu_thirtysix_installment">36 installments</string>
+    <string name="visa_menu_thirtytwo_installment">32 installments</string>
+    <string name="visa_menu_thirythree_installment">33 installments</string>
+    <string name="visa_menu_three_installment">3 installments</string>
+    <string name="visa_menu_twelve_installment">12 installments</string>
+    <string name="visa_menu_twenty_installment">20 installments</string>
+    <string name="visa_menu_twentyeight_installment">28 installments</string>
+    <string name="visa_menu_twentyfive_installment">25 installments</string>
+    <string name="visa_menu_twentyfour_installment">24 installments</string>
+    <string name="visa_menu_twentynine_installment">29 installments</string>
+    <string name="visa_menu_twentyone_installment">21 installments</string>
+    <string name="visa_menu_twentyseven_installment">27 installments</string>
+    <string name="visa_menu_twentysix_installment">26 installments</string>
+    <string name="visa_menu_twentythree_installment">23 installments</string>
+    <string name="visa_menu_twentytwo_installment">22 installments</string>
+    <string name="visa_menu_two_installment">2 installments</string>
+    <string name="visanet_amount_limit">Max. amount charged to your card periodically. Must be greater than or equal to the subscription plan.</string>
+    <string name="visanet_button_recurrence">Programmed Payment</string>
+    <string name="visanet_frequency_annual">Annual</string>
+    <string name="visanet_frequency_biannual">Biannual</string>
+    <string name="visanet_frequency_monthly">Monthly</string>
+    <string name="visanet_frequency_quaterly">Quaterly</string>
+    <string name="visanet_hint_amount_limit">Maximum payment limit</string>
+    <string name="visanet_hint_annual_charge">Annual charge</string>
+    <string name="visanet_hint_biannual_charge">Biannual Charge</string>
+    <string name="visanet_hint_card">Card Number</string>
+    <string name="visanet_hint_city">City</string>
+    <string name="visanet_hint_country">Country</string>
+    <string name="visanet_hint_cvv">CVV</string>
+    <string name="visanet_hint_date">Due date</string>
+    <string name="visanet_hint_document_number">Document number</string>
+    <string name="visanet_hint_document_type">Document type</string>
+    <string name="visanet_hint_email">Email</string>
+    <string name="visanet_hint_fee">Installments</string>
+    <string name="visanet_hint_installments">Installments</string>
+    <string name="visanet_hint_last_name">Last Name</string>
+    <string name="visanet_hint_mm">MM</string>
+    <string name="visanet_hint_mmyy">MM/YY</string>
+    <string name="visanet_hint_monthly_charge">Monthly Charge</string>
+    <string name="visanet_hint_name">Name</string>
+    <string name="visanet_hint_no_installments">Without installments</string>
+    <string name="visanet_hint_pay_now">Pay Now</string>
+    <string name="visanet_hint_phone">Mobile</string>
+    <string name="visanet_hint_quarterly_charge">Quarterly Charge</string>
+    <string name="visanet_hint_remember">Remember card</string>
+    <string name="visanet_hint_yy">YY</string>
+    <string name="visanet_initial_amount">This amount will be charged to your card now</string>
+    <string name="visanet_initial_recurrence_amount">This amount will be charged to your card periodically</string>
+    <string name="visanet_label_country">Billing address of the card:</string>
+    <string name="visanet_label_payment_method">Choose a payment method : </string>
+    <string name="visanet_label_text_cancel">Cancel</string>
+    <string name="visanet_label_text_ok">OK</string>
+    <string name="visanet_menu_ce">Immigration Card</string>
+    <string name="visanet_menu_dni">DNI</string>
+    <string name="visanet_menu_passport">Pasaport</string>
+    <string name="visanet_text_delete_card">Delete Card</string>
+    <string name="visanet_text_list_card">My Cards</string>
+    <string name="visanet_text_new_card">New Card</string>
+    <string name="visanet_text_pay">Pay</string>
+    <string name="visanet_text_register">Register</string>
+    <string name="visanet_trash_message">Are you sure you want to remove the card ${card}?</string>
+    <string name="visanet_trash_title">Delete</string>
+    <string name="visanet_validation_error_amount">Amount entered is incorrect</string>
+</resources>

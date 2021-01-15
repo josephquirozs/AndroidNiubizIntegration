@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_form_payment_pagoefectivo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:visibility="gone">
+
+    <TableRow
+        android:layout_marginBottom="@dimen/visanet_20"
+        android:layout_marginTop="@dimen/visanet_20"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_pe_question_form2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/form_pagoefectivo_text1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_pe_text2_form2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/form_pagoefectivo_text2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/visanet_5"
+                    android:text="✓"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/label_pe_text3_form2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/form_pagoefectivo_text3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/visanet_5"
+                    android:text="✓"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/label_pe_text4_form2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/form_pagoefectivo_text4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/visanet_5"
+                    android:text="✓"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/logo"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pagoefectivo_centro_pagos" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/label_pe_email_form2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:text="@string/label_pe_email" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_3"
+        android:gravity="center">
+
+        <lib.visanet.com.pe.visanetlib.presentation.ui.custom.VisaNetInputField
+            android:id="@+id/email_pago_efectivo"
+            style="@style/VisaNetInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/visanet_50"
+            android:layout_weight="2"
+            android:drawableStart="@drawable/visanet_ic_mail"
+            android:hint="@string/visanet_hint_email"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"
+            android:maxLength="75" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/visanet_3"
+        android:layout_marginTop="@dimen/visanet_10"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_pagoefectivo_buy"
+            style="@style/VisaNetBigButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/visanet_text_pay"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="@dimen/visanet_20"
+        android:layout_marginTop="@dimen/visanet_3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_pago_efectivo" />
+
+    </TableRow>
+
+</TableLayout>
+
+
+

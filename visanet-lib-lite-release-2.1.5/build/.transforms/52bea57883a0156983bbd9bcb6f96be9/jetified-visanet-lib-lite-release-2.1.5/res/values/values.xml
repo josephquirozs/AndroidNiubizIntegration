@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="array_YY">
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="array_card">
+        <item>Card One</item>
+        <item>Card Two</item>
+        <item>Card Three</item>
+    </string-array>
+    <string-array name="array_country" ns1:ignore="InconsistentArrays">
+        <item>Afganistan</item>
+        <item>Albania</item>
+        <item>Alemania</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua y Barbuda</item>
+        <item>Arabia Saudita</item>
+        <item>Argelia</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaiyan</item>
+        <item>Bahamas</item>
+        <item>Banglades</item>
+        <item>Barbados</item>
+        <item>Barein</item>
+        <item>Belgica</item>
+        <item>Belice</item>
+        <item>Benin</item>
+        <item>Bielorrusia</item>
+        <item>Birmania</item>
+        <item>Bolivia</item>
+        <item>Bosnia y Herzegovina</item>
+        <item>Botsuana</item>
+        <item>Brasil</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Butan</item>
+        <item>Cabo Verde</item>
+        <item>Camboya</item>
+        <item>Camerun</item>
+        <item>Canada</item>
+        <item>Catar</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Chipre</item>
+        <item>Ciudad del Vaticano</item>
+        <item>Colombia</item>
+        <item>Comoras</item>
+        <item>Corea del Norte</item>
+        <item>Corea del Sur</item>
+        <item>Costa de Marfil</item>
+        <item>Costa Rica</item>
+        <item>Croacia</item>
+        <item>Cuba</item>
+        <item>Dinamarca</item>
+        <item>Dominica</item>
+        <item>Ecuador</item>
+        <item>Egipto</item>
+        <item>El Salvador</item>
+        <item>Emiratos arabes Unidos</item>
+        <item>Eritrea</item>
+        <item>Eslovaquia</item>
+        <item>Eslovenia</item>
+        <item>España</item>
+        <item>Estados Unidos</item>
+        <item>Estonia</item>
+        <item>Etiopia</item>
+        <item>Filipinas</item>
+        <item>Finlandia</item>
+        <item>Fiyi</item>
+        <item>Francia</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Ghana</item>
+        <item>Granada</item>
+        <item>Grecia</item>
+        <item>Guatemala</item>
+        <item>Guyana</item>
+        <item>Guinea</item>
+        <item>Guinea ecuatorial</item>
+        <item>Guinea-Bisau</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hungria</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Irak</item>
+        <item>Iran</item>
+        <item>Irlanda</item>
+        <item>Islandia</item>
+        <item>Islas Marshall</item>
+        <item>Islas Salomon</item>
+        <item>Israel</item>
+        <item>Italia</item>
+        <item>Jamaica</item>
+        <item>Japon</item>
+        <item>Jordania</item>
+        <item>Kazajistan</item>
+        <item>Kenia</item>
+        <item>Kirguistan</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Laos</item>
+        <item>Lesoto</item>
+        <item>Letonia</item>
+        <item>Libano</item>
+        <item>Liberia</item>
+        <item>Libia</item>
+        <item>Liechtenstein</item>
+        <item>Lituania</item>
+        <item>Luxemburgo</item>
+        <item>Madagascar</item>
+        <item>Malasia</item>
+        <item>Malaui</item>
+        <item>Maldivas</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marruecos</item>
+        <item>Mauricio</item>
+        <item>Mauritania</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldavia</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Mozambique</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Noruega</item>
+        <item>Nueva Zelanda</item>
+        <item>Oman</item>
+        <item>Paises Bajos</item>
+        <item>Pakistan</item>
+        <item>Palaos</item>
+        <item>Panama</item>
+        <item>Papua Nueva Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Polonia</item>
+        <item>Portugal</item>
+        <item>Reino Unido</item>
+        <item>Republica Centroafricana</item>
+        <item>Republica Checa</item>
+        <item>Republica de Macedonia</item>
+        <item>Republica del Congo</item>
+        <item>Republica Democratica del Congo</item>
+        <item>Republica Dominicana</item>
+        <item>Republica Sudafricana</item>
+        <item>Ruanda</item>
+        <item>Rumania</item>
+        <item>Rusia</item>
+        <item>Samoa</item>
+        <item>San Cristobal y Nieves</item>
+        <item>San Marino</item>
+        <item>San Vicente y las Granadinas</item>
+        <item>Santa Lucia</item>
+        <item>Santo Tome y Principe</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leona</item>
+        <item>Singapur</item>
+        <item>Siria</item>
+        <item>Somalia</item>
+        <item>Sri Lanka</item>
+        <item>Suazilandia</item>
+        <item>Sudan</item>
+        <item>Sudan del Sur</item>
+        <item>Suecia</item>
+        <item>Suiza</item>
+        <item>Surinam</item>
+        <item>Tailandia</item>
+        <item>Tanzania</item>
+        <item>Tayikistan</item>
+        <item>Timor Oriental</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad y Tobago</item>
+        <item>Tunez</item>
+        <item>Turkmenistan</item>
+        <item>Turquia</item>
+        <item>Tuvalu</item>
+        <item>Ucrania</item>
+        <item>Uganda</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Yemen</item>
+        <item>Yibuti</item>
+        <item>Zambia</item>
+        <item>Zimbabue</item>
+    </string-array>
+    <string-array name="array_installment">
+    <item>Sin Cuotas</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    </string-array>
+    <string-array name="array_mm">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <color name="disabled_color">#9e9e9e</color>
+    <color name="enabled_color">#FFFFFF</color>
+    <color name="toolbarTransparent">#00FFFFFF</color>
+    <color name="visanet_ambar">#ffc400</color>
+    <color name="visanet_black">#000000</color>
+    <color name="visanet_black_semi_overlay">#4E4646</color>
+    <color name="visanet_black_semi_overlay_old">#40000000</color>
+    <color name="visanet_blue">#095395</color>
+    <color name="visanet_button_red">#D80000</color>
+    <color name="visanet_gray">#EEEEEE</color>
+    <color name="visanet_gray_high">#999999</color>
+    <color name="visanet_gray_medium">#D3D3D3</color>
+    <color name="visanet_green">#00D0B6</color>
+    <color name="visanet_platanitos">#43c251</color>
+    <color name="visanet_purple1">#741b87</color>
+    <color name="visanet_purple2">#C7A7CE</color>
+    <color name="visanet_red">#e75853</color>
+    <color name="visanet_white">#FFFFFF</color>
+    <color name="visanet_yape_green">#00D0B6</color>
+    <color name="visanet_yape_white">#FFFFFF</color>
+    <color name="yape_input">#3D484C</color>
+    <color name="yape_input_hint">#D4DAE0</color>
+    <color name="yape_label">#808E95</color>
+    <color name="yape_label_botton">#D4DAE0</color>
+    <dimen name="LoadingDots_dots_size_default">12dp</dimen>
+    <dimen name="LoadingDots_dots_space_default">2dp</dimen>
+    <dimen name="LoadingDots_jump_height_default">12dp</dimen>
+    <dimen name="visanet_10">10dp</dimen>
+    <dimen name="visanet_100">100dp</dimen>
+    <dimen name="visanet_12">12dp</dimen>
+    <dimen name="visanet_120">120dp</dimen>
+    <dimen name="visanet_14">14dp</dimen>
+    <dimen name="visanet_15">15dp</dimen>
+    <dimen name="visanet_16">16dp</dimen>
+    <dimen name="visanet_2">2dp</dimen>
+    <dimen name="visanet_20">20dp</dimen>
+    <dimen name="visanet_22">22dp</dimen>
+    <dimen name="visanet_24">24dp</dimen>
+    <dimen name="visanet_25">25dp</dimen>
+    <dimen name="visanet_3">3dp</dimen>
+    <dimen name="visanet_30">30dp</dimen>
+    <dimen name="visanet_32">32dp</dimen>
+    <dimen name="visanet_4">4dp</dimen>
+    <dimen name="visanet_40">40dp</dimen>
+    <dimen name="visanet_48">48dp</dimen>
+    <dimen name="visanet_5">5dp</dimen>
+    <dimen name="visanet_50">50dp</dimen>
+    <dimen name="visanet_56">56dp</dimen>
+    <dimen name="visanet_6">6dp</dimen>
+    <dimen name="visanet_60">60dp</dimen>
+    <dimen name="visanet_70">70dp</dimen>
+    <dimen name="visanet_8">8dp</dimen>
+    <dimen name="visanet_80">80dp</dimen>
+    <dimen name="visanet_text_12">12sp</dimen>
+    <dimen name="visanet_text_14">14sp</dimen>
+    <dimen name="visanet_text_16">16sp</dimen>
+    <dimen name="visanet_text_18">18sp</dimen>
+    <dimen name="visanet_text_20">20sp</dimen>
+    <dimen name="visanet_text_22">22sp</dimen>
+    <string name="cancel">Cancelar</string>
+    <string name="card_invalidate">Numero no valido</string>
+    <string name="card_temp" translatable="false">************1234</string>
+    <string name="eng" translatable="false">ENG</string>
+    <string name="esp" translatable="false">ESP</string>
+    <string name="fintrax_content2">Tipo de cambio de acuerdo a la entidad bancaria.</string>
+    <string name="form_pagoefectivo_text1">¿Cómo realizar tu compra con PagoEfectivo?</string>
+    <string name="form_pagoefectivo_text2">Luego de haber dado click en "pagar", recibirás un e-mail con el código CIP de PagoEfectivo que tendrá validez solo por {hours} horas.</string>
+    <string name="form_pagoefectivo_text3">&lt;b>Depósitos en efectivo vía PagoEfectivo&lt;/b> - Paga en BBVA, BCP, Interbank, Scotiabank, BanBif, Western Union, Tambo+, Kasnet, Full Carga, Red Digital, Money Gram, Caja Arequipa, Disashop, en cualquier agente o agencia autorizada a nivel nacional a la cuenta de PagoEfectivo.</string>
+    <string name="form_pagoefectivo_text4"> <![CDATA[<b>Transferencias bancarias vía PagoEfectivo</b> - Paga en BBVA, BCP, Interbank, Scotiabank, BanBif, Caja Arequipa, a través de la banca por internet o banca móvil en la opción pago de servicios.]]></string>
+    <string name="fx_margen">MARGEN FX</string>
+    <string name="image_description" translatable="false">image</string>
+    <string name="label_alias">Ingresar Alias</string>
+    <string name="label_hint_alias">Ingresar Alias aqui..</string>
+    <string name="label_pe_email">Ingresa tu email para recibir el código:</string>
+    <string name="logo" translatable="false">Logo</string>
+    <string name="mensual" translatable="false">Mensual</string>
+    <string name="msg_recurrence_amount">Este monto será cargado a tu tarjeta periódicamente</string>
+    <string name="pe_tarjeta_cd">Tarjeta de crédito y débito</string>
+    <string name="pe_transferencia">Trasferencias Bancarias y \ndepósitos en efectivo</string>
+    <string name="remember_description">Se guardará tu información para futuras compras</string>
+    <string name="soles" translatable="false">S/ 0.00</string>
+    <string name="suscribe_to">Registrate a:</string>
+    <string name="title_recurrence_amount">Cargo Mensual</string>
+    <string name="title_remember_description">Recordar tarjeta</string>
+    <string name="titulo_temp" translatable="false">[ TU TÍTULO AQUÍ ]</string>
+    <string name="titulo_temp1" translatable="false">Visa es una de las marcas de pago líderes del mundo</string>
+    <string name="valid_name" translatable="false">ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789- </string>
+    <string name="valid_numeric" translatable="false">0123456789</string>
+    <string name="valid_text" translatable="false">ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz</string>
+    <string name="valid_text_numeric" translatable="false">ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789</string>
+    <string name="visa_cvv_info">El código CVV son los tres dígitos que aparecen en la parte posterior de la tarjeta</string>
+    <string name="visa_hint_no_installment">Sin Cuotas</string>
+    <string name="visa_menu_eight_installment">8 Cuotas</string>
+    <string name="visa_menu_eighteen_installment">18 Cuotas</string>
+    <string name="visa_menu_eleven_installment">11 Cuotas</string>
+    <string name="visa_menu_five_installment">5 Cuotas</string>
+    <string name="visa_menu_fiveteen_installment">15 Cuotas</string>
+    <string name="visa_menu_four_installment">4 Cuotas</string>
+    <string name="visa_menu_fourteen_installment">14 Cuotas</string>
+    <string name="visa_menu_installment">Cuotas</string>
+    <string name="visa_menu_nine_installment">9 Cuotas</string>
+    <string name="visa_menu_nineteen_installment">19 Cuotas</string>
+    <string name="visa_menu_one_installment">Sin Cuotas</string>
+    <string name="visa_menu_seven_installment">7 Cuotas</string>
+    <string name="visa_menu_seventeen_installment">17 Cuotas</string>
+    <string name="visa_menu_six_installment">6 Cuotas</string>
+    <string name="visa_menu_sixteen_installment">16 Cuotas</string>
+    <string name="visa_menu_ten_installment">10 Cuotas</string>
+    <string name="visa_menu_thirteen_installment">13 Cuotas</string>
+    <string name="visa_menu_thirty_installment">30 Cuotas</string>
+    <string name="visa_menu_thirtyfive_installment">35 Cuotas</string>
+    <string name="visa_menu_thirtyfour_installment">34 Cuotas</string>
+    <string name="visa_menu_thirtyone_installment">31 Cuotas</string>
+    <string name="visa_menu_thirtysix_installment">36 Cuotas</string>
+    <string name="visa_menu_thirtytwo_installment">32 Cuotas</string>
+    <string name="visa_menu_thirythree_installment">33 Cuotas</string>
+    <string name="visa_menu_three_installment">3 Cuotas</string>
+    <string name="visa_menu_twelve_installment">12 Cuotas</string>
+    <string name="visa_menu_twenty_installment">20 Cuotas</string>
+    <string name="visa_menu_twentyeight_installment">28 Cuotas</string>
+    <string name="visa_menu_twentyfive_installment">25 Cuotas</string>
+    <string name="visa_menu_twentyfour_installment">24 Cuotas</string>
+    <string name="visa_menu_twentynine_installment">29 Cuotas</string>
+    <string name="visa_menu_twentyone_installment">21 Cuotas</string>
+    <string name="visa_menu_twentyseven_installment">27 Cuotas</string>
+    <string name="visa_menu_twentysix_installment">26 Cuotas</string>
+    <string name="visa_menu_twentythree_installment">23 Cuotas</string>
+    <string name="visa_menu_twentytwo_installment">22 Cuotas</string>
+    <string name="visa_menu_two_installment">2 Cuotas</string>
+    <string name="visanet_amount_limit">Monto máximo a cargar en tu tarjeta periódicamente. Debe ser mayor o igual al plan contratado.</string>
+    <string name="visanet_button_recurrence">Pago Programado</string>
+    <string name="visanet_frequency_annual" ns1:ignore="Typos">Anual</string>
+    <string name="visanet_frequency_biannual">Bianual</string>
+    <string name="visanet_frequency_monthly">Mensual</string>
+    <string name="visanet_frequency_quaterly">Trimestral</string>
+    <string name="visanet_hint_aa">AA</string>
+    <string name="visanet_hint_amount_limit">Establecer monto máximo</string>
+    <string name="visanet_hint_annual_charge">Cargo Anual</string>
+    <string name="visanet_hint_biannual_charge">Cargo Bianual</string>
+    <string name="visanet_hint_card">Número de Tarjeta</string>
+    <string name="visanet_hint_city">Ciudad</string>
+    <string name="visanet_hint_country">País</string>
+    <string name="visanet_hint_cvv">CVV</string>
+    <string name="visanet_hint_cvv2" translatable="false"> - - - </string>
+    <string name="visanet_hint_date">Fecha de Vencimiento</string>
+    <string name="visanet_hint_document_number">Numero de doc.</string>
+    <string name="visanet_hint_document_type">Tipo de doc.</string>
+    <string name="visanet_hint_email">Correo</string>
+    <string name="visanet_hint_fee">Cuotas</string>
+    <string name="visanet_hint_installments">Cuotas</string>
+    <string name="visanet_hint_last_name">Apellido</string>
+    <string name="visanet_hint_mm">MM</string>
+    <string name="visanet_hint_mmyy">MM/AA</string>
+    <string name="visanet_hint_monthly_charge">Cargo Mensual</string>
+    <string name="visanet_hint_name">Nombre</string>
+    <string name="visanet_hint_no_installments">Sin cuotas</string>
+    <string name="visanet_hint_pay_now">Pagar Ahora</string>
+    <string name="visanet_hint_phone">Móvil</string>
+    <string name="visanet_hint_quarterly_charge">Cargo Trimestral</string>
+    <string name="visanet_hint_remember">Recordar Tarjeta</string>
+    <string name="visanet_hint_yape_card" translatable="false">0000 0000 0000 0000</string>
+    <string name="visanet_hint_yape_yy" translatable="false">AA</string>
+    <string name="visanet_hint_yy">AA</string>
+    <string name="visanet_initial_amount">Este monto será cargado a tu tarjeta inmediatamente</string>
+    <string name="visanet_initial_recurrence_amount">Este monto será cargado a tu tarjeta periódicamente</string>
+    <string name="visanet_label_country">Dirección de facturación de la tarjeta:</string>
+    <string name="visanet_label_payment_method">Elige un medio de pago : </string>
+    <string name="visanet_label_text_cancel">Cancelar</string>
+    <string name="visanet_label_text_ok">Aceptar</string>
+    <string name="visanet_menu_ce">Carne de Extranjeria</string>
+    <string name="visanet_menu_dni">DNI</string>
+    <string name="visanet_menu_passport">Pasaporte</string>
+    <string name="visanet_text_delete_card">Eliminar Tarjeta</string>
+    <string name="visanet_text_list_card">Mis Tarjetas</string>
+    <string name="visanet_text_new_card">Nueva Tarjeta</string>
+    <string name="visanet_text_pay">Pagar</string>
+    <string name="visanet_text_register">Registrarse</string>
+    <string name="visanet_trash_message">¿Estás seguro que deseas eliminar la tarjeta ${card}?</string>
+    <string name="visanet_trash_title">Eliminar</string>
+    <string name="visanet_validation_error_amount">Monto ingresado es incorrecto</string>
+    <string name="visanet_yape_card" translatable="false">Tarjeta de debito (Ahorro en soles)</string>
+    <string name="visanet_yape_register" translatable="false">Agregar tarjeta</string>
+    <string name="yape_title1" translatable="false">Crear Cuenta</string>
+    <string name="yape_title2" translatable="false">Agregar tarjeta</string>
+    <string name="yape_title3" translatable="false">Con esta tarjeta haras tus transferencias.</string>
+    <style name="EditTextYape" parent="YapeInput">
+        <item name="colorControlActivated">@color/visanet_yape_green</item>
+        <item name="colorControlNormal">@color/yape_input_hint</item>
+    </style>
+    <style name="RadioButtonAmbar" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/visanet_ambar</item>
+        <item name="colorControlActivated">@color/visanet_ambar</item>
+    </style>
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+    <style name="VisaNet.Theme.SemiTransparent" parent="VisaNetTranslucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="VisaNet.Theme.Transparent" parent="VisaNetTranslucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="VisaNetAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/visanet_blue</item>
+        <item name="colorPrimaryDark">@color/visanet_blue</item>
+        <item name="colorAccent">@color/visanet_blue</item>
+    </style>
+    <style name="VisaNetBigButton">
+        <item name="android:background">@drawable/visanet_selector_button_red</item>
+        <item name="android:textColor">@color/visanet_white</item>
+        <item name="android:textSize">@dimen/visanet_text_18</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="VisaNetInput">
+        <item name="android:background">@drawable/visanet_rounded_corners_bg_white</item>
+        <item name="android:textColorHint">@color/visanet_gray_medium</item>
+        <item name="android:textColor">@color/visanet_black</item>
+        <item name="android:drawablePadding">@dimen/visanet_20</item>
+        <item name="android:textSize">@dimen/visanet_text_16</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="VisaNetTranslucent" parent="VisaNetAppTheme">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="VisaNetYapeButton">
+        <item name="android:background">@drawable/visanet_selector_button_purple</item>
+        <item name="android:textColor">@color/visanet_white</item>
+        <item name="android:textSize">@dimen/visanet_text_18</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="YapeInput">
+        <item name="android:textColor">@color/yape_input</item>
+        <item name="android:textColorHint">@color/yape_input_hint</item>
+        <item name="android:textSize">@dimen/visanet_text_16</item>
+        <item name="android:paddingStart">0dp</item>
+    </style>
+    <style name="YapeLabel">
+        <item name="android:textColor">@color/yape_label</item>
+        <item name="android:textSize">@dimen/visanet_16</item>
+    </style>
+    <declare-styleable name="LoadingDots">
+        <attr format="boolean" name="LoadingDots_auto_play"/>
+
+        <attr format="color" name="LoadingDots_dots_color"/>
+        <attr format="integer" name="LoadingDots_dots_count"/>
+        <attr format="dimension" name="LoadingDots_dots_size"/>
+        <attr format="dimension" name="LoadingDots_dots_space"/>
+
+        <attr format="integer" name="LoadingDots_loop_duration"/>
+        <attr format="integer" name="LoadingDots_loop_start_delay"/>
+
+        <attr format="integer" name="LoadingDots_jump_duration"/>
+        <attr format="dimension" name="LoadingDots_jump_height"/>
+    </declare-styleable>
+</resources>

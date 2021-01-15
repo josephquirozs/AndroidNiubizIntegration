@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/text_info_body_view"
+        android:id="@+id/textbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/ss_challengeInfoLableTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/marginTop"
+        android:text="@string/ss_challengeinfo_lable"
+        android:textSize="16sp"
+        android:textAppearance="@style/challengelabletext" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:paddingLeft="@dimen/fab_margin"
+        android:id="@+id/selectradiogroup"/>
+
+    <Button
+        android:id="@+id/ss_submitAuthenticationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:theme="@style/otpbody.verfyBtn"/>
+</LinearLayout>

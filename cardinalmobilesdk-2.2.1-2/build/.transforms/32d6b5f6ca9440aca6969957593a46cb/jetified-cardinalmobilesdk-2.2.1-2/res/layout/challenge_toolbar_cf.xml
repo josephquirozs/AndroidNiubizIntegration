@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright © 2017 CardinalCommerce. All rights reserved.
+  -->
+
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    app:title="@string/secured_checkout"
+    app:titleTextColor="@color/colorBlack"
+    android:background="#f7f7f7"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    android:elevation="3dp">
+    <TextView
+        android:id="@+id/toolbarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/marginTop"
+        android:text="@string/cancel"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:textAppearance="@style/otpBodyText"
+        tools:ignore="RtlHardcoded"
+        android:focusable="true" />
+</androidx.appcompat.widget.Toolbar>
+
+
+

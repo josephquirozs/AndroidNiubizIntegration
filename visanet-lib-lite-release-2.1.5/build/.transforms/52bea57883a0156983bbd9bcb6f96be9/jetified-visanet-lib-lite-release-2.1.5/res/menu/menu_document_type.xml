@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/option_dni"
+        android:title="@string/visanet_menu_dni" />
+
+    <item
+        android:id="@+id/option_passport"
+        android:title="@string/visanet_menu_passport" />
+
+    <item
+        android:id="@+id/option_ce"
+        android:title="@string/visanet_menu_ce" />
+
+</menu>
