@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun openPaymentForm() {
         val token =
-            "eyJraWQiOiJmWk1tV3pZR0RBckxHektvalNCK2w3SjFhMnNPXC9zQnNwOTlNNmNuM3F5MD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0NzFmYjk3Yy0xNjNlLTQyYjYtOGI3OC03Zjk1YjA1OGM1NTgiLCJldmVudF9pZCI6IjFjNDY5N2QyLWJjZWQtNDIwMS1hN2QzLThkMmJjM2ExMDFlNSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MTA3MTkxMjYsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xXzJjSjFTZTFmSSIsImV4cCI6MTYxMDcyMjcyNiwiaWF0IjoxNjEwNzE5MTI2LCJqdGkiOiJkMDdmODE5NC0xYTU0LTQzNzgtYWQzMC00YzA3MjgzNDUxY2IiLCJjbGllbnRfaWQiOiIxMGx2MDYxN281ZGljNTFlYnNucWVpaWpiNyIsInVzZXJuYW1lIjoiaW50ZWdyYWNpb25lc0BuaXViaXouY29tLnBlIn0.L6Dz_443xDSQT_FbOUQLjGe3YJwIdMeuJ9vdl6Rg403Ya51d2YCc7yZF-swE_9idZDzGQ2d1359Kfq1pWBc-DsoC0MO6YI2yXH0pHoKmlXB1Ooi-3lGPKIep1osPX-Bd1gqv6-jVXEst5OA8T5dXZTBw4YBWpp8PHdHyDqrf3c2dnyNCl_GpvT3T4Dxgo6pdhSBtHd5lMMi7jjq8VFpwdEERCtrWg75U6o5n6RxuWRt8qUYHVflQa5KCco2j1RuQaCHHiMKoh-5Nj5vfI5ro0QPL9AhPjbqVsejztpdX07AldhIXr5GZYHCiUzoJ5kZFMTRfGzPdN6nqZbm1mSXRRQ"
+            "eyJraWQiOiJmWk1tV3pZR0RBckxHektvalNCK2w3SjFhMnNPXC9zQnNwOTlNNmNuM3F5MD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0NzFmYjk3Yy0xNjNlLTQyYjYtOGI3OC03Zjk1YjA1OGM1NTgiLCJldmVudF9pZCI6IjllMzEwZDZiLWJiYzQtNDY1MS05MDA1LTRmOGExZDBmMzgxNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MTEwMjg3MjUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xXzJjSjFTZTFmSSIsImV4cCI6MTYxMTAzMjMyNSwiaWF0IjoxNjExMDI4NzI2LCJqdGkiOiJhN2Y3ZTI0OC04ZDY1LTRhM2EtODA3OC05Nzc3MmY4MWI0MDIiLCJjbGllbnRfaWQiOiIxMGx2MDYxN281ZGljNTFlYnNucWVpaWpiNyIsInVzZXJuYW1lIjoiaW50ZWdyYWNpb25lc0BuaXViaXouY29tLnBlIn0.WuRpk0cAxveF4rsEk4BtnfmK-2-oTiNU8ofc4EXrHRsJmX47KF1sj4yccejuk-QDoTzLA_RV0bQVDqhMaBmRE3vVX0se6-BppzQ3M7SepCtLfMUZnen5rKdVVYTEHqlGV4PtqjBChNigqOb6-pzolvO2qGC27X3-UeBH3Br0BBpu9MG-oxHsRCQDUfh9wk3AbBy11I3KjRXt6ntfkQbIXSlDtpVyQv0tOaqLvEJELlhuasFZDu8PDw7zTHpxqz2TeKobp6N9g5VxFIUlYJ6nLXEsB8SkcLUqUyMUDizPsqXxwcL8XwPCA6QwJ0ZmtOyJHYhteSMPRa9fS0K4dtMSnA"
 
         val data = HashMap<String, Any>()
         data[VisaNet.VISANET_CHANNEL] = VisaNet.Channel.MOBILE
@@ -52,9 +52,10 @@ class MainActivity : AppCompatActivity() {
         custom.buttonColorMerchant = R.color.visanet_black
 
         try {
-//            VisaNet.authorization(this@MainActivity, data, custom)
-            VisaNet.authorization(this@MainActivity, data)
+            VisaNet.authorization(this@MainActivity, data, custom)
+//            VisaNet.authorization(this@MainActivity, data)
         } catch (e: Exception) {
+            e.printStackTrace()
             Log.i(TAG, "onClick: " + e.message)
         }
     }
