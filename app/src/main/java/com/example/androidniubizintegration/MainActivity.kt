@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         data[VisaNet.VISANET_CHANNEL] = VisaNet.Channel.MOBILE
         data[VisaNet.VISANET_COUNTABLE] = true
         data[VisaNet.VISANET_SECURITY_TOKEN] =
-            "eyJraWQiOiJmWk1tV3pZR0RBckxHektvalNCK2w3SjFhMnNPXC9zQnNwOTlNNmNuM3F5MD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0NzFmYjk3Yy0xNjNlLTQyYjYtOGI3OC03Zjk1YjA1OGM1NTgiLCJldmVudF9pZCI6Ijg3YjRlNDliLWMxMDAtNDExNS05MGY0LThlNmU4MDlhOTQ2ZCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MTE2NzQ1NjIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xXzJjSjFTZTFmSSIsImV4cCI6MTYxMTY3ODE2MiwiaWF0IjoxNjExNjc0NTYyLCJqdGkiOiJlYWE5YzY4Ny01MjRmLTQxYzQtYWQyZS0yNDEyZTVlZTBmMzUiLCJjbGllbnRfaWQiOiIxMGx2MDYxN281ZGljNTFlYnNucWVpaWpiNyIsInVzZXJuYW1lIjoiaW50ZWdyYWNpb25lc0BuaXViaXouY29tLnBlIn0.T_fu0ZrHZfZxMNECWCBa59PRONin0CXnKwcfaqnwvLUBsaWKIeK6lbT4yVB0ps0Ubo4o0JbD5XAMw5jmZNzAG3e6K_Qt1kRRzpTZmZlBNmwFPcmvTSwiiT_ODbLV3o8DwiNUoHJDQL7pQMuAoBwgc_w6-YLNcq1Zip5A1YMMxMoBPf6DKxuljcDuvhC_BRpD395nQ4pxWZO4XGlrPQ1Yl-w_ynEMuFKMkbsaYBLOroX67Ln-wtrjzNDnijPgNywctoAJjj1jarIiF3RXeyVyJCfZKRVJt6hH95S1dXSwYbjBSuuuP_FUszMwABQUD1LNOcabnFbyzkLcWA19ElxLvA"
+            "eyJraWQiOiJmWk1tV3pZR0RBckxHektvalNCK2w3SjFhMnNPXC9zQnNwOTlNNmNuM3F5MD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0NzFmYjk3Yy0xNjNlLTQyYjYtOGI3OC03Zjk1YjA1OGM1NTgiLCJldmVudF9pZCI6ImIwMDkzNzUwLTgyMGItNDJjMC05NzRjLWFkNDM2Yzk3ZTQ4NiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MTE2NzUwOTMsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xXzJjSjFTZTFmSSIsImV4cCI6MTYxMTY3ODY5MywiaWF0IjoxNjExNjc1MDkzLCJqdGkiOiJkM2ZlZTY1Zi00ODdjLTRkOWYtOTk5NC03MGZiODNjYzQ2NzgiLCJjbGllbnRfaWQiOiIxMGx2MDYxN281ZGljNTFlYnNucWVpaWpiNyIsInVzZXJuYW1lIjoiaW50ZWdyYWNpb25lc0BuaXViaXouY29tLnBlIn0.chCp8A-lrn5rx-Y5H6NcdXej1Y4fqZqGFSeJEjCYtqDoUA9cEmwA4iyiRQKTQ_DXQvc7PVp1bgsEwTXtRZxkhpSIetp2SbCGCwBe24iKGAbmSeFlOAfEu1LIgxHhockVOi2MkHij1pvDZagS3E8j6grwhkDb8kuvrT1TVqY3G4CqvRhimBYPUIY2AqF2hEIkMqHq4XiMEAf3kli4O2HSkBrsdM9QZ-GJfp5SNW30B02waSQacTOCPUUMXoXoNgXHVI-xckS1KQvZD457zxFWtAbjlftzOSh4X2a9P68FSDp-ulcHCnyBz3CbJbYt7A3lTCBmRInkrEiQVjqzfmdf0Q"
         data[VisaNet.VISANET_MERCHANT] = "456879852"
         data[VisaNet.VISANET_PURCHASE_NUMBER] = "1790"
         data[VisaNet.VISANET_AMOUNT] = "15.22"
@@ -55,7 +55,11 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         when (requestCode) {
             VisaNet.VISANET_AUTHORIZATION -> {
-                // TODO: Implementar respuesta del formulario
+                val response = when (resultCode) {
+                    RESULT_OK -> data?.extras?.getString("keySuccess")
+                    else -> data?.extras?.getString("keyError")
+                }
+                Log.i(TAG, "Payment form response $response")
             }
             else -> Log.i(TAG, "Request code not implemented")
         }
