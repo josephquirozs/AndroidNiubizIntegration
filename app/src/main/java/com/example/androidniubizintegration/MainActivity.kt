@@ -1,53 +1,69 @@
 package com.example.androidniubizintegration
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Base64
 import android.util.Log
+import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
+import com.google.gson.GsonBuilder
+import kotlinx.coroutines.*
 import lib.visanet.com.pe.visanetlib.VisaNet
 import lib.visanet.com.pe.visanetlib.presentation.custom.VisaNetViewAuthorizationCustom
+import retrofit2.Retrofit
+import retrofit2.awaitResponse
+import retrofit2.converter.gson.GsonConverterFactory
+import java.io.IOException
+
 
 class MainActivity : AppCompatActivity() {
     private val TAG = "Payment"
+    private lateinit var mainScreen: View
     private lateinit var openFormButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        mainScreen = findViewById(R.id.screen_main)
         openFormButton = findViewById(R.id.button_open_form)
         openFormButton.setOnClickListener {
-            openPaymentForm()
+            GlobalScope.launch {
+                openPaymentForm()
+            }
         }
     }
 
-    private fun openPaymentForm() {
-        val data = HashMap<String, Any>()
-        data[VisaNet.VISANET_CHANNEL] = VisaNet.Channel.MOBILE
-        data[VisaNet.VISANET_COUNTABLE] = true
-        data[VisaNet.VISANET_SECURITY_TOKEN] =
-            "eyJraWQiOiJmWk1tV3pZR0RBckxHektvalNCK2w3SjFhMnNPXC9zQnNwOTlNNmNuM3F5MD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0NzFmYjk3Yy0xNjNlLTQyYjYtOGI3OC03Zjk1YjA1OGM1NTgiLCJldmVudF9pZCI6ImIwMDkzNzUwLTgyMGItNDJjMC05NzRjLWFkNDM2Yzk3ZTQ4NiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MTE2NzUwOTMsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xXzJjSjFTZTFmSSIsImV4cCI6MTYxMTY3ODY5MywiaWF0IjoxNjExNjc1MDkzLCJqdGkiOiJkM2ZlZTY1Zi00ODdjLTRkOWYtOTk5NC03MGZiODNjYzQ2NzgiLCJjbGllbnRfaWQiOiIxMGx2MDYxN281ZGljNTFlYnNucWVpaWpiNyIsInVzZXJuYW1lIjoiaW50ZWdyYWNpb25lc0BuaXViaXouY29tLnBlIn0.chCp8A-lrn5rx-Y5H6NcdXej1Y4fqZqGFSeJEjCYtqDoUA9cEmwA4iyiRQKTQ_DXQvc7PVp1bgsEwTXtRZxkhpSIetp2SbCGCwBe24iKGAbmSeFlOAfEu1LIgxHhockVOi2MkHij1pvDZagS3E8j6grwhkDb8kuvrT1TVqY3G4CqvRhimBYPUIY2AqF2hEIkMqHq4XiMEAf3kli4O2HSkBrsdM9QZ-GJfp5SNW30B02waSQacTOCPUUMXoXoNgXHVI-xckS1KQvZD457zxFWtAbjlftzOSh4X2a9P68FSDp-ulcHCnyBz3CbJbYt7A3lTCBmRInkrEiQVjqzfmdf0Q"
-        data[VisaNet.VISANET_MERCHANT] = "456879852"
-        data[VisaNet.VISANET_PURCHASE_NUMBER] = "1790"
-        data[VisaNet.VISANET_AMOUNT] = "15.22"
-        data[VisaNet.VISANET_ENDPOINT_URL] = "https://apisandbox.vnforappstest.com/"
-        data[VisaNet.VISANET_CERTIFICATE_HOST] = "apisandbox.vnforappstest.com"
-        data[VisaNet.VISANET_CERTIFICATE_PIN] =
-            "sha256/lmxiL6uol7hb4UwDxtk2qbF2lBnJc7zqZRT6sFfYWEE="
-        data[VisaNet.VISANET_REGISTER_NAME] = "Juan"
-        data[VisaNet.VISANET_REGISTER_LASTNAME] = "Perez"
-        data[VisaNet.VISANET_REGISTER_EMAIL] = "jperez@test.com"
-//        data[VisaNet.VISANET_USER_TOKEN] = "demo@gmail.com"
-
-        val custom = VisaNetViewAuthorizationCustom()
-        custom.logoImage = R.drawable.tulogo
-        custom.buttonColorMerchant = R.color.visanet_black
-
+    private suspend fun openPaymentForm() {
         try {
+            val data = mapOf(
+                VisaNet.VISANET_CHANNEL to VisaNet.Channel.MOBILE,
+                VisaNet.VISANET_COUNTABLE to true,
+                VisaNet.VISANET_SECURITY_TOKEN to getSecurityToken(),
+                VisaNet.VISANET_MERCHANT to "456879852",
+                VisaNet.VISANET_PURCHASE_NUMBER to "1790",
+                VisaNet.VISANET_AMOUNT to "15.22",
+                VisaNet.VISANET_ENDPOINT_URL to "https://apisandbox.vnforappstest.com/",
+                VisaNet.VISANET_CERTIFICATE_HOST to "apisandbox.vnforappstest.com",
+                VisaNet.VISANET_CERTIFICATE_PIN to
+                        "sha256/lmxiL6uol7hb4UwDxtk2qbF2lBnJc7zqZRT6sFfYWEE=",
+                VisaNet.VISANET_REGISTER_NAME to "Juan",
+                VisaNet.VISANET_REGISTER_LASTNAME to "Perez",
+                VisaNet.VISANET_REGISTER_EMAIL to "jperez@test.com",
+            )
+            val custom = VisaNetViewAuthorizationCustom().apply {
+                logoImage = R.drawable.tulogo
+                buttonColorMerchant = R.color.visanet_black
+            }
             VisaNet.authorization(this@MainActivity, data, custom)
         } catch (e: Exception) {
             e.printStackTrace()
+            Snackbar.make(
+                mainScreen,
+                "Unable to open payment form. Check logs for details",
+                Snackbar.LENGTH_LONG
+            ).show()
         }
     }
 
@@ -63,5 +79,35 @@ class MainActivity : AppCompatActivity() {
             }
             else -> Log.i(TAG, "Request code not implemented")
         }
+    }
+
+    private suspend fun getSecurityToken(): String = withContext(Dispatchers.IO) {
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://apisandbox.vnforappstest.com/api.security/v1/")
+            .addConverterFactory(
+                GsonConverterFactory.create(
+                    GsonBuilder().setLenient().create()
+                )
+            ).build()
+        val encodedCredentials =
+            encodeCredentials("integraciones@niubiz.com.pe", "_7z3@8fF")
+        val headers = mapOf(
+            "Authorization" to "Basic $encodedCredentials",
+        )
+        val call = retrofit.create(SecurityService::class.java)
+            .getToken(headers)
+        Log.i(TAG, "Request get url ${call.request().url}")
+        val response = call.awaitResponse()
+        Log.i(TAG, "Response status ${response.code()}")
+        Log.i(TAG, "Response body ${response.body()}")
+        response.body() ?: throw IOException("Unable to get security token")
+    }
+
+    private fun encodeCredentials(username: String, password: String): String {
+        val credentials = "$username:$password"
+        return Base64.encodeToString(
+            credentials.toByteArray(charset("UTF-8")),
+            Base64.NO_WRAP
+        )
     }
 }
